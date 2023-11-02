@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <title> COTRIVIA | Leaderboard </title>
+</head>
+<body>
+    <div class="wrapper-home">
+        <p></p>
+        <h1>Leaderboard</h1>
+        <button type="button" class="logout-btn" onclick="handleLogout()">Logout</button>
+    </div>
+
+    <div class="leaderboard">
+        <table class="leader-list">
+            <tr>
+                <th>SN</th>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        // const userDataString = sessionStorage.getItem('userdata');
+        const userData = JSON.parse(sessionStorage.getItem('userdata'));
+        
+        
+        if (userData){
+            const userScoreData = JSON.parse(localStorage.getItem('userScores'));
+            userScoreData.sort((u1, u2) => (u1.scoreCount < u2.scoreCount) ? 1 : (u1.scoreCount > u2.scoreCount) ? -1 : 0);
+    
+            let list = document.querySelector(".leader-list");
+            let sn = 1;
+            if (userScoreData){
+                userScoreData.forEach(element => {
+                    if (element.myCurrentUser == userData.username){
+                        // list.style.color="red";
+                        list.innerHTML += `<tr style="color:red"><td>${sn}</td><td>${element.myCurrentUser}</td> <td>${element.scoreCount}</td></tr>`;
+                    }else{
+                        list.innerHTML += `<tr><td>${sn}</td><td>${element.myCurrentUser}</td> <td>${element.scoreCount}</td></tr>`;
+                    }
+                    sn++;
+                });
+            }
+        }else{
+            window.location="login.html";
+        }
+
+    </script>
+    <script type="text/javascript" src="login.js"></script>
+</body>
+</html>

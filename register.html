@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <title> COTRIVIA | Register </title>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Register</h2>
+        <form id="login-form">
+            <p>
+                <input type="username" name="username" id="username" placeholder="Username" required oninput="checkUsername(this.value)">
+                <span id="check-username"></span>
+            </p>
+            <p>
+                <input type="email" name="email" id="email" placeholder="Email Address" required oninput="validateEmail(this.value)">
+                <span id="valid-email"></span>
+            </p>
+            <p>
+                <input type="password" name="password" id="password" placeholder="Password" required oninput="validPassword(this.value)">
+                <span id="valid-password"></span>
+            </p>
+            <p>
+                <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required oninput="confirmPassword(this.value)">
+                <span id="valid-con-password"></span>
+            </p>
+
+            <button type="submit" onclick="handleSubmit(event)">
+                Register
+            </button>
+        </form>
+        <div id="register-new">
+            <p>Already have an account? <a href="login.html">Login</a> </p>
+        </div>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

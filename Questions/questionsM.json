@@ -1,0 +1,71 @@
+[{
+  "question": "According to the USDA, which food group should you eat the most servings of per day?",
+  "A": "vegetables",
+  "B": "dairy",
+  "C": "meats",
+  "D": "breads",
+  "answer": "D"
+}, {
+  "question": "Ada Lovelace is credited with being the first person to have made what?",
+  "A": "a computer program",
+  "B": "a souffle",
+  "C": "a brassiere",
+  "D": "a mystery novel",
+  "answer": "A"
+}, {
+  "question": "After Prince Charles, who is next in line to be the king of England?",
+  "A": "Prince William",
+  "B": "Prince Andrew",
+  "C": "Prince Edward",
+  "D": "Fresh Prince",
+  "answer": "A"
+}, {
+  "question": "An airplane's black box is usually what color?",
+  "A": "black",
+  "B": "white",
+  "C": "orange",
+  "D": "purple",
+  "answer": "C"
+}, {
+  "question": "As of 1999, which state has the most Girl Scouts?",
+  "A": "California",
+  "B": "Illinois",
+  "C": "New York",
+  "D": "Pennsylvania",
+  "answer": "A"
+}, {
+  "question": "Astronaut John Glenn served as a pilot in what branch of the military?",
+  "A": "Army",
+  "B": "Air Force",
+  "C": "Marines",
+  "D": "Navy",
+  "answer": "C"
+}, {
+  "question": "At the equator, how fast is the earth's surface turning?",
+  "A": "about 100 miles per hour",
+  "B": "about 500 miles per hour",
+  "C": "about 1000 miles per hour",
+  "D": "about 2000 miles per hour",
+  "answer": "C"
+}, {
+  "question": "At what age can someone first attend an R-rated movie without an accompanying adult?",
+  "A": "15",
+  "B": "17",
+  "C": "18",
+  "D": "21",
+  "answer": "C"
+}, {
+  "question": "Backgammon is a how many player game?",
+  "A": "Two",
+  "B": "Three",
+  "C": "Four",
+  "D": "Six",
+  "answer": "A"
+}, {
+  "question": "Before he went into coaching, Phil Jackson played for which of the following NBA teams?",
+  "A": "Boston Celtics",
+  "B": "Los Angeles Lakers",
+  "C": "New York Knicks",
+  "D": "Philadelphia 76ers",
+  "answer": "C"
+}]

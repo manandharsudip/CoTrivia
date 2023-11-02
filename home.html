@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <title> COTRIVIA | Home </title>
+</head>
+<body>
+    <div class="wrapper-home">
+        <p></p>
+        <h1>Hi <span id="myusername"></span>, Welcome to the COTRIVIA</h1>
+        <button type="button" class="logout-btn" onclick="handleLogout()">Logout</button>
+    </div>
+    <div class="game-menu">
+        <span class="game-menu-span">Game Menu</span>
+        <a href="game.html"><button type="button">Start</button></a>
+        <a href="mode.html"><button type="button">Mode</button></a>
+        <a href="leaderboard.html"><button type="button">Leaderboard</button></a>
+    </div>
+
+    <script>
+        const userDataString = sessionStorage.getItem('userdata');
+        if (userDataString){
+            const userData = JSON.parse(userDataString);
+            document.querySelector("#myusername").textContent = userData.username;
+        }else{
+            window.location="login.html";
+        }
+    </script>
+    <script type="text/javascript" src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+:root {
+    --primary-color: #0d1521;
+    --primary-color-hover: #17263b;
+    --primary-alternate-color: #0a1320;
+    --secondary-color: #0dd661;
+    --secondary-color-hover: #099c46;
+    --options-button-primary: #ffffff;
+    --options-button-hover: #ffffffb0;
+    --primary-textcolor: #ffffff;
+    --border: rgb(185, 185, 185);
+}
+
+body{
+    background: var(--primary-color);
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--primary-textcolor);
+}
+
+.wrapper{
+    text-align: center;
+    padding: 10px;
+    border: solid var(--border);
+    border-radius: 5px;
+    background: var(--primary-alternate-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary-textcolor);
+}
+
+#login-form{
+    padding: 0 20px;
+}
+
+input{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    line-height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 0 15px;
+}
+
+
+#login-form > button{
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: var(--secondary-color);
+    border: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#login-form > button:hover{
+    background: var(--secondary-color-hover);
+}
+
+a{
+    color: aliceblue;
+}
+
+span{
+    margin-top: 10px;
+    color: #fd0000;
+}
+
+
+
+.wrapper-home{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    padding: 10px 30px;
+    background: #0e1a2b;
+    position: relative;
+    color: var(--primary-textcolor);
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wrapper-home > button{
+    height: 35px;
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.wrapper-home > button:hover{
+    background: var(--secondary-color-hover);
+}
+
+
+.game-menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 50px 40px 50px;
+    border-radius: 5px;
+    background: var(--primary-alternate-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary-textcolor);
+    border: solid var(--border);
+}
+
+.game-menu-span{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.game-menu > a > button{
+    width: 100%;
+    margin: 5px 0px;
+    padding: 0 10px;
+    height: 40px;
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.game-menu > a > button:hover{
+    background: var(--secondary-color-hover);
+}
+
+.mygame{
+    text-align: center;
+    width: 80%;
+    padding: 40px;
+    border: solid var(--border);
+    border-radius: 5px;
+    background: var(--primary-alternate-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary-textcolor);
+}
+
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.options > button {
+    /* display: flex;
+    flex-wrap: wrap; */
+    width: 40%;
+    height: 50px;
+    margin: 15px;
+    background: var(--options-button-primary);
+    border: none;
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.options > button:hover{
+    background: var(--options-button-hover);
+}
+
+.leaderboard{
+    text-align: center;
+    padding: 40px;
+    border: solid var(--border);
+    border-radius: 5px;
+    background: var(--primary-alternate-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--border);
+}
+
+table > tbody > tr > th, td{
+    padding: 10px 20px;
+}
+
+table > tbody > tr > th{
+    color: var(--options-button-primary);
+}
+
+.modep{
+    text-align: center;
+}

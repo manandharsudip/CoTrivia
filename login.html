@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <title> COTRIVIA | Login </title>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Login</h2>
+        <form id="login-form">
+            <p>
+                <input type="email" name="email" id="email" placeholder="Email Address" required oninput="handleInput(this.value)">
+                <span id="valid-email"></span>
+            </p>
+            <p>
+                <input type="password" name="password" id="password" placeholder="Password" required oninput="handlePassword(this.value)">
+                <span id="valid-password"></span>
+            </p>
+
+            <button type="button" onclick="handleSubmit()">
+                Login
+            </button>
+        </form>
+        <div id="register-new">
+            <p>Don't have an account? <a href="register.html">Register</a> </p>
+        </div>
+    </div>
+    <script>
+        const userData = JSON.parse(sessionStorage.getItem('userdata'));
+        if (userData){
+            window.location="home.html";
+        }
+    </script>
+    <script src="login.js"></script>
+</body>
+</html>
